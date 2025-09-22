@@ -32,16 +32,6 @@
             >
         </div>
 
-        <div class="mb-3">
-            <label for="biographie" class="form-label">Biographie</label>
-            <textarea
-                class="form-control"
-                id="biographie"
-                name="biographie"
-                rows="4"
-            >{{ old('biographie', $auteur->biographie) }}</textarea>
-        </div>
-
         <button type="submit" class="btn btn-primary">Enregistrer les modifications</button>
         <a href="{{ route('auteurs.index') }}" class="btn btn-secondary">Annuler</a>
     </form>
